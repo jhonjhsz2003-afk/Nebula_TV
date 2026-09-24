@@ -1,0 +1,13 @@
+# Configuração de referência para uso dentro de /cloudflare.
+# O deploy recomendado a partir da raiz do repositório usa ../wrangler.toml.
+name = "nebula-tv"
+main = "src/index.js"
+compatibility_date = "2026-09-24"
+
+[assets]
+directory = "../site"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[vars]
+NEBULA_VERSION = "5.1.1"

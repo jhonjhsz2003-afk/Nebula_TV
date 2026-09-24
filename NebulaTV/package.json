@@ -1,0 +1,11 @@
+{
+  "name": "nebula-tv-cloudflare",
+  "private": true,
+  "scripts": {
+    "deploy:worker": "wrangler deploy --config ./wrangler.toml",
+    "deploy:pages": "wrangler pages deploy site --project-name nebula-tv"
+  },
+  "devDependencies": {
+    "wrangler": "^4.137.0"
+  }
+}
